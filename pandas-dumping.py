@@ -4,6 +4,10 @@ df = pd.read_csv('england-premier-league-players-2018-to-2019-stats.csv')
 
 print(df) #shows just a snippet
 
-print(df.to_string()) # will print whole csv
+ # will print whole csv
+# print(df.to_string())
+print(df.head(12))
+print()
+print(df.tail(12))
 
 
