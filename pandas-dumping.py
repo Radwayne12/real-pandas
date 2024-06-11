@@ -13,3 +13,7 @@ print(df.tail(12))
 #rows and columns of data frame
 df.shape()
 
+
+print(df['full_name'])
+
+print(df.loc(df['full_name']))
