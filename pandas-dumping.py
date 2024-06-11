@@ -10,4 +10,6 @@ print(df.head(12))
 print()
 print(df.tail(12))
 
+#rows and columns of data frame
+df.shape()
 
