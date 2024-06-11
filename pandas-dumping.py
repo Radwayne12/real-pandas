@@ -16,4 +16,6 @@ df.shape()
 
 print(df['full_name'])
 
-print(df.loc(df['full_name']))
+print(df.loc('full_name'))
+
+print(df.loc(df['Current Club'] == 'Arsenal, 'full_name'))
