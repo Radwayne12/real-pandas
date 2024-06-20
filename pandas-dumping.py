@@ -12,10 +12,13 @@ print(df.tail(12))
 
 #rows and columns of data frame
 df.shape()
+print(df.count())
 
 
 print(df['full_name'])
 
 print(df.loc('full_name'))
+print(df[['full_name', 'Current Club']])
 
 print(df.loc(df['Current Club'] == 'Arsenal, 'full_name'))
+
