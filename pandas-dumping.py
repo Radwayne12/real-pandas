@@ -22,3 +22,5 @@ print(df[['full_name', 'Current Club']])
 
 print(df.loc(df['Current Club'] == 'Arsenal, 'full_name'))
 
+# while loc locates rows by lable, iloc locates by index or integer
+print(df.iloc[1]) # first row
