@@ -17,10 +17,13 @@ print(df.count())
 
 print(df['full_name'])
 
-print(df.loc('full_name'))
+print(df.loc['full_name'])
 print(df[['full_name', 'Current Club']])
 
-print(df.loc(df['Current Club'] == 'Arsenal, 'full_name'))
+print(df.loc[df['Current Club'] == 'Arsenal, 'full_name'])
 
 # while loc locates rows by lable, iloc locates by index or integer
 print(df.iloc[1]) # first row
+
+#second argument can be a list of columns to retreive
+print(df.iloc[0, [0,3]]) #display first row, only 0 and 4th columns
