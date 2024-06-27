@@ -27,3 +27,5 @@ print(df.iloc[1]) # first row
 
 #second argument can be a list of columns to retreive
 print(df.iloc[0, [0,3]]) #display first row, only 0 and 4th columns
+
+df = df.set_index('full_name')
