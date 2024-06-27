@@ -29,3 +29,5 @@ print(df.iloc[1]) # first row
 print(df.iloc[0, [0,3]]) #display first row, only 0 and 4th columns
 
 df = df.set_index('full_name')
+
+print(df.loc["Adam Smith"])
