@@ -31,3 +31,8 @@ print(df.iloc[0, [0,3]]) #display first row, only 0 and 4th columns
 df = df.set_index('full_name')
 
 print(df.loc["Adam Smith"])
+
+df.reset_index()
+
+# in pandas, ~ means ! , | means or, & means and
+print(df.loc[(df["Age"] < 25)] & df['position'] == 'defender', ['full_name'])
