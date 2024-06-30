@@ -36,3 +36,8 @@ df.reset_index()
 
 # in pandas, ~ means ! , | means or, & means and
 print(df.loc[(df["Age"] < 25)] & df['position'] == 'defender', ['full_name'])
+
+# altering the rows
+df.loc[df['full_name' == 'Harry Kane', 'Current Club'] = 'Spurs'
+print('''
+Tottenham Hotsupur -> Spurs\n''', df)
