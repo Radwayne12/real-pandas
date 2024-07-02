@@ -41,3 +41,6 @@ print(df.loc[(df["Age"] < 25)] & df['position'] == 'defender', ['full_name'])
 df.loc[df['full_name' == 'Harry Kane', 'Current Club'] = 'Spurs'
 print('''
 Tottenham Hotsupur -> Spurs\n''', df)
+
+# info about columns
+print(df.columns())
