@@ -44,3 +44,13 @@ Tottenham Hotsupur -> Spurs\n''', df)
 
 # info about columns
 print(df.columns())
+
+#apply(fun) applies a function to a seiries (can be df)
+print(df['full_name'].apply(lower))
+ 
+print(df['full_name'].apply(lambda x: x.title()))
+
+#apply to df
+df.apply(len) # it will apply len to columns of df, not really used for it
+
+# applymap() can be used to apply fun to all cells
