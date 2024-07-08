@@ -53,4 +53,10 @@ print(df['full_name'].apply(lambda x: x.title()))
 #apply to df
 df.apply(len) # it will apply len to columns of df, not really used for it
 
-# applymap() can be used to apply fun to all cells
+# applymap(fun) can be used to apply fun to all cells
+df.loc[1 == 1, ['full_name', 'Current Club]].applyman(len)
+
+#map can change cells with respective values
+df['full_name'].map({'Hary Kane': 'Haaary Kain', 'Harry Maguire': 'goat'})
+
+# all the values that are not affected by map() will turn to NaN
