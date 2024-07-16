@@ -60,3 +60,8 @@ df.loc[1 == 1, ['full_name', 'Current Club]].applyman(len)
 df['full_name'].map({'Hary Kane': 'Haaary Kain', 'Harry Maguire': 'goat'})
 
 # all the values that are not affected by map() will turn to NaN
+
+# to leave other values as they are, replace() can be used instead of map()
+
+df['Current Club'].replace({'Tottenham': 'Spurs', 'Manchester City':'Man City'})
+#other values in the column will not be NaN
