@@ -65,3 +65,7 @@ df['full_name'].map({'Hary Kane': 'Haaary Kain', 'Harry Maguire': 'goat'})
 
 df['Current Club'].replace({'Tottenham': 'Spurs', 'Manchester City':'Man City'})
 #other values in the column will not be NaN
+
+# to add a column
+df['first_name'] = df['full_name'].split[0]
+
