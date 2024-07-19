@@ -69,3 +69,8 @@ df['Current Club'].replace({'Tottenham': 'Spurs', 'Manchester City':'Man City'})
 # to add a column
 df['first_name'] = df['full_name'].split[0]
 
+# to delete a column
+df.drop(columns='full_name')
+
+            
+
